@@ -8,8 +8,8 @@ inputs:
   zip_file:
     description: 'Package zip file path'
     required: true
-  compatible_runtimes:
-    description: 'Runtimes you want your layer to be compatible with'
+  runtime:
+    description: 'Runtime you want your layer to be compatible with'
     required: true
 runs:
   using: 'node12'
