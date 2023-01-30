@@ -4,9 +4,9 @@ import fs from 'fs'
 
 async function run() {
     try {
-        const LayerName = core.getInput('layer_name', { required: true })
+        const name = core.getInput('layer_name', { required: true })
         const zipFile = core.getInput('zip_file', { required: true })
-        const CompatibleRuntimes = core.getInput('compatible_runtimes', { required: true})
+        const runtimes = core.getInput('compatible_runtimes', { required: true})
 
         const lambdaConfig: Lambda.Types.ClientConfiguration = {
             accessKeyId: process.env.AWS_ACCESS_KEY_ID,
@@ -26,8 +26,8 @@ async function run() {
                 Content: {
                     ZipFile: fs.readFileSync(zipFile),
                 },
-                LayerName,
-                CompatibleRuntimes,
+                LayerName: name,
+                CompatibleRuntimes: runtimes,
             })
             .promise()
 
