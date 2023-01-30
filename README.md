@@ -2,8 +2,6 @@
 
 Docs from AWS Lambda JS SDK: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Lambda.html#publishLayerVersion-property.
 
-Run PublishLayerVersion.
-
 ## Secret
 
 Add Secret before this action. `Settings > Secrets > Add a new secret`
@@ -21,7 +19,7 @@ Add Secret before this action. `Settings > Secrets > Add a new secret`
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   with:
-    layer_name: TargetFunctionName
+    layer_name: TARGET_FUNCTION_NAME
     zip_file: path/to/file.zip
-    compatible_runtimes: runtimes
+    runtime: RUNTIME_HERE
 ```
