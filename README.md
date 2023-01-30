@@ -1,8 +1,8 @@
 # GitHub Action - AWS Lambda Layer Publish
 
-Run PublishLayerVersion
+Docs from AWS Lambda JS SDK: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Lambda.html#publishLayerVersion-property.
 
-# Usage
+Run PublishLayerVersion.
 
 ## Secret
 
