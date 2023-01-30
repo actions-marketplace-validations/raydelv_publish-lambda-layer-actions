@@ -14,8 +14,8 @@ Add Secret before this action. `Settings > Secrets > Add a new secret`
 
 ## Example
 ```yml
-- name: AWS Lambda Layer Publish
-  uses: taotao2345/aws-lambda-publishlayer@v1.0.0
+- name: Publish AWS Lambda Layer w/Version
+  uses: raydelv/publish-lambda-layer-actions@aws_lambda
   env:
     AWS_REGION: ${{ secrets.AWS_REGION }}
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
