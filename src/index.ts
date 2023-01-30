@@ -27,7 +27,7 @@ async function run() {
                     ZipFile: fs.readFileSync(zipFile),
                 },
                 LayerName: name,
-                CompatibleRuntimes: [runtime],
+                CompatibleRuntimes: ['python3.9'],
             })
             .promise()
 
