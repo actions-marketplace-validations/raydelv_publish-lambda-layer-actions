@@ -1,4 +1,4 @@
-name: 'AWS Lambda Layer Publish'
+name: 'Publish AWS Lambda Layer w/Version'
 description: 'Run PublishLayerVersion'
 author: 'taotao2345'
 inputs: 
@@ -7,6 +7,9 @@ inputs:
     required: true
   zip_file:
     description: 'Package zip file path'
+    required: true
+  compatible_runtimes:
+    description: 'Runtimes you want your layer to be compatible with'
     required: true
 runs:
   using: 'node12'
