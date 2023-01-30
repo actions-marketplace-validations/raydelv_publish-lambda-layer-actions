@@ -23,4 +23,5 @@ Add Secret before this action. `Settings > Secrets > Add a new secret`
   with:
     layer_name: TargetFunctionName
     zip_file: path/to/file.zip
+    compatible_runtimes: runtimes
 ```
