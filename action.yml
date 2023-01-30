@@ -8,9 +8,6 @@ inputs:
   zip_file:
     description: 'Package zip file path'
     required: true
-  runtime:
-    description: 'Runtime you want your layer to be compatible with'
-    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
